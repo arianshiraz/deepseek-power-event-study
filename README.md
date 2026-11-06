@@ -72,3 +72,10 @@ python run_all.py
 
 - Market-model abnormal returns.
 - Three inference approaches that allow for a common event date: equal-weighted portfolio tests, Kolari and Pynnönen (2010) adjusted BMP tests, and a placebo-day distribution for the cross-sectional slope.
+- A pre-specified stacked-event test across four AI-electricity events, with placebo-date permutation inference.
+
+## Author and license
+
+Arian Nasrollahi Shiraz. This is a pilot study for a PhD research agenda on electricity markets and AI-driven demand. It is a research artifact, not a peer-reviewed publication.
+
+Code is released under the [MIT License](LICENSE). Downloaded data (Yahoo Finance, EIA-860) are not redistributed and remain subject to their providers' terms. Facts from SEC filings are cited in `data/classification/contract_status.csv`.
