@@ -2,7 +2,7 @@
 
 An event study of how US power-sector stocks reacted on 27 January 2025, when DeepSeek's R1 model raised doubts about how much electricity AI would need. The study compares merchant generators, regulated utilities, and water and gas utilities (placebo).
 
-> **Status:** pilot. Firm classification is frozen under a written rule ([`docs/classification_rule.md`](docs/classification_rule.md)). Contract evidence is partly verified. The stacked-event test was pre-specified before its returns were computed ([`docs/research_design.md`](docs/research_design.md), section 8c).
+> **Status:** pilot. Firm classification is frozen under a written rule ([`docs/classification_rule.md`](docs/classification_rule.md)). Contract evidence is verified against each firm's last filing before the event. The stacked-event test was pre-specified before its returns were computed ([`docs/research_design.md`](docs/research_design.md), section 8c).
 
 ## Research question
 

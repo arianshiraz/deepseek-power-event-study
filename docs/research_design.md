@@ -1,7 +1,7 @@
 # Who Captures AI Load? Power-Sector Equity Returns and the DeepSeek Shock
 
 **Pilot study for the PhD proposals** (Economics: "When Compute Meets the Grid", Paper 2; Finance: "Financing the Buildout", Paper 2)
-**Status:** pipeline running; firm classification frozen under rule v1.1 (6 November 2026). Contract evidence partly verified.
+**Status:** pipeline running; firm classification frozen under rule v1.1 (6 November 2026). Contract evidence verified against pre-event 10-K and 10-Q filings (6 November 2026); no flag changed.
 
 ---
 
@@ -125,7 +125,7 @@ Abnormal returns (market model), equal-weighted portfolios:
 
 - **Contracts insulate value (H3, descriptive).** AES has about as much non-regulated capacity per dollar of equity as Talen (1,016 vs 1,068 MW per $bn), but its fleet is mostly long-term contracted. On the event day AES fell 0.3% and Talen 19.9%. The contracted hybrids (SO, D, BKH, NEE) moved with the regulated utilities. Adjusting for contracts raises the explanatory power of the exposure measure, as H3 predicts.
 - **The response rises with exposure.** PSEG's uncontracted intensity is about one fifth of the merchants' (97 vs 460 to 1,068 MW per $bn), and its fall (−6.4%) is about one third of theirs.
-- **Within the merchants, the ranking is imperfect.** NRG has high intensity but fell least (−11.8%). One candidate explanation, not yet tested: NRG's large retail business gains when wholesale prices fall, a natural hedge.
+- **Within the merchants, the ranking is imperfect.** NRG has high intensity but fell least (−11.8%). One candidate explanation, not yet tested: NRG's large retail business gains when wholesale prices fall, a natural hedge. Its FY2023 10-K supports the mechanism: NRG hedges its wholesale sales and purchases to support its retail load obligations.
 - **Caveat.** The continuous slope is identified mainly by the four merchants and PSEG, because almost every other electric utility has intensity near zero. It refines the group contrast rather than adding independent variation.
 
 ## 8c. Stacked-event test of H4 (pre-specified 6 November 2026)

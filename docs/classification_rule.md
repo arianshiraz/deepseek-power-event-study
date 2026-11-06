@@ -59,7 +59,8 @@ The four merchants (CEG, VST, NRG, TLN) and the placebo group are unchanged.
 ## Known limits
 
 - **Name mapping misses some assets.** Project-company names that do not reveal the parent are missed, so NR share for developers with many project LLCs (NextEra Energy Resources, AES) is a lower bound. Vistra is the largest known gap: EIA mapping finds about 26 GW against roughly 41 GW in company materials (to verify), so its intensity is understated.
-- **Contract evidence is incomplete.** Most entries in `contract_status.csv` come from search summaries of 10-Ks, not full reads, and are marked `partial` or `no`. Reading the FY2023 10-K passages is the remaining verification step.
+- **Contract evidence (verified 6 November 2026).** Every entry in `contract_status.csv` was checked against the latest periodic filing before the event: the FY2023 10-K, filed February 2024, for nine firms, and Talen's Q3 2024 10-Q, since Talen filed no FY2023 10-K. No flag changed. One input is still from press: Millstone's total annual output, used to judge that about half its output is contracted. Merchants hedge heavily near-term (Vistra 98% of 2024 generation, PSEG 90% to 95%), but hedges cover one to three years. Equity value depends on longer horizons, so these fleets are still treated as uncontracted.
+- **The contract flag is binary.** NextEra reports 1,842 MW of merchant capacity, and Dominion's Millstone is about half uncontracted. Both are set to zero uncontracted MW. Using reported merchant MW instead is a natural robustness check.
 - **The continuous slope rests on few firms.** It is identified mainly by the four merchants and PSEG; every other electric utility has uncontracted intensity near zero.
 - **EIA's regulatory status is a plant-level label.** It does not reflect contracts.
 - **Capacity is not earnings.** A firm with a small but high-margin merchant fleet may be more exposed than its capacity share suggests.
