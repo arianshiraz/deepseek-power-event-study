@@ -1,0 +1,5 @@
+event,label,date,sign,beta_e,se_HC3,p_HC3,N,sign_matches
+pjm_bra,PJM capacity auction (Jul 2024),2024-07-30,1,0.00682,0.00170,0.00006,45,True
+crane_ppa,Crane PPA (Sep 2024),2024-09-20,1,0.00635,0.00863,0.46201,44,True
+ferc_isa,FERC rejects Talen ISA (Nov 2024),2024-11-01,-1,-0.00843,0.01005,0.40164,44,True
+deepseek,DeepSeek (Jan 2025),2025-01-27,-1,-0.02050,0.00854,0.01635,45,True

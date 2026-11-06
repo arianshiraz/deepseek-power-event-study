@@ -1,0 +1,29 @@
+spec,coef,window,N,estimate,se_HC3,p_HC3,placebo_days,p_placebo_days,note
+dummies_group,merchant,"CAR[0,0]",45,-0.2054,0.0333,0.0000,246,0.0000,
+dummies_group,merchant,"CAR[0,1]",45,-0.1548,0.0258,0.0000,245,0.0000,overlapping windows
+dummies_group,merchant,"CAR[0,5]",45,-0.0646,0.0147,0.0000,241,0.1909,overlapping windows
+dummies_group,merchant,"CAR[0,20]",45,-0.2543,0.0548,0.0000,226,0.0044,overlapping windows
+dummies_group_v10,merchant,"CAR[0,0]",45,-0.1794,0.0379,0.0000,246,0.0000,
+dummies_group_v10,merchant,"CAR[0,1]",45,-0.1372,0.0271,0.0000,245,0.0000,overlapping windows
+dummies_group_v10,merchant,"CAR[0,5]",45,-0.0626,0.0119,0.0000,241,0.1494,overlapping windows
+dummies_group_v10,merchant,"CAR[0,20]",45,-0.2271,0.0503,0.0000,226,0.0044,overlapping windows
+dummies_group_prelim,merchant,"CAR[0,0]",45,-0.2078,0.0333,0.0000,246,0.0000,
+dummies_group_prelim,merchant,"CAR[0,1]",45,-0.1566,0.0258,0.0000,245,0.0000,overlapping windows
+dummies_group_prelim,merchant,"CAR[0,5]",45,-0.0664,0.0145,0.0000,241,0.1826,overlapping windows
+dummies_group_prelim,merchant,"CAR[0,20]",45,-0.2543,0.0546,0.0000,226,0.0044,overlapping windows
+continuous_merchant_mw_per_bn_per100,merchant_mw_per_bn,"CAR[0,0]",45,-0.0263,0.0090,0.0034,246,0.0000,
+continuous_merchant_mw_per_bn_per100,merchant_mw_per_bn,"CAR[0,1]",45,-0.0191,0.0074,0.0097,245,0.0000,overlapping windows
+continuous_merchant_mw_per_bn_per100,merchant_mw_per_bn,"CAR[0,5]",45,-0.0074,0.0056,0.1877,241,0.2282,overlapping windows
+continuous_merchant_mw_per_bn_per100,merchant_mw_per_bn,"CAR[0,20]",45,-0.0300,0.0146,0.0392,226,0.0044,overlapping windows
+continuous_merchant_mw_per_bn_per100_electric_only,merchant_mw_per_bn,"CAR[0,0]",39,-0.0263,0.0090,0.0034,246,0.0000,
+continuous_merchant_mw_per_bn_per100_electric_only,merchant_mw_per_bn,"CAR[0,1]",39,-0.0191,0.0074,0.0097,245,0.0000,overlapping windows
+continuous_merchant_mw_per_bn_per100_electric_only,merchant_mw_per_bn,"CAR[0,5]",39,-0.0074,0.0056,0.1877,241,0.2282,overlapping windows
+continuous_merchant_mw_per_bn_per100_electric_only,merchant_mw_per_bn,"CAR[0,20]",39,-0.0300,0.0146,0.0392,226,0.0044,overlapping windows
+continuous_nr_mw_per_bn_per100,nr_mw_per_bn,"CAR[0,0]",45,-0.0179,0.0089,0.0458,246,0.0000,
+continuous_nr_mw_per_bn_per100,nr_mw_per_bn,"CAR[0,1]",45,-0.0141,0.0057,0.0129,245,0.0000,overlapping windows
+continuous_nr_mw_per_bn_per100,nr_mw_per_bn,"CAR[0,5]",45,-0.0066,0.0026,0.0116,241,0.1743,overlapping windows
+continuous_nr_mw_per_bn_per100,nr_mw_per_bn,"CAR[0,20]",45,-0.0217,0.0100,0.0302,226,0.0044,overlapping windows
+continuous_nr_mw_per_bn_per100_electric_only,nr_mw_per_bn,"CAR[0,0]",39,-0.0179,0.0089,0.0458,246,0.0000,
+continuous_nr_mw_per_bn_per100_electric_only,nr_mw_per_bn,"CAR[0,1]",39,-0.0141,0.0057,0.0129,245,0.0000,overlapping windows
+continuous_nr_mw_per_bn_per100_electric_only,nr_mw_per_bn,"CAR[0,5]",39,-0.0066,0.0026,0.0116,241,0.1743,overlapping windows
+continuous_nr_mw_per_bn_per100_electric_only,nr_mw_per_bn,"CAR[0,20]",39,-0.0217,0.0100,0.0302,226,0.0044,overlapping windows

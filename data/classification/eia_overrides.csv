@@ -1,0 +1,3 @@
+ticker,owner_regex,plant_regex,action,reason
+PEG,^PSEG Keys Energy Center,.*,exclude,"Keys sold with PSEG's fossil fleet before 2024; EIA owner name is stale (verify sale date)"
+PEG,^Public Service Elec & Gas,.*,force_nr_if_third_party,"Stakes in plants operated by others (e.g. Peach Bottom) belong to PSEG Power; EIA lists the stale utility name, so the owner-type rule would wrongly call them regulated"

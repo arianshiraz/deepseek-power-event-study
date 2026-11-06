@@ -1,0 +1,46 @@
+ticker,name,sector_type,group_prelim,note,total_mw,nr_mw,pjm_ercot_mw,nuclear_mw,mcap_bn,has_regulated_utility,nr_mostly_contracted,nr_share,pjm_ercot_share,nuclear_share,nr_mw_per_bn,merchant_mw_per_bn,group,group_v10
+VST,Vistra,electric,merchant,Competitive generation and retail (ERCOT/PJM); includes Energy Harbor nuclear since 2024,26371.3000,25226.5000,21540.3000,4083.6000,46.9070,0.0000,0.0000,0.9566,0.8168,0.1549,537.7987,537.7987,merchant,merchant
+CEG,Constellation Energy,electric,merchant,Largest US nuclear fleet; competitive generation; Microsoft Crane PPA Sept 2024,32194.9802,32194.9802,27406.4426,23816.9660,69.9691,0.0000,0.0000,1.0000,0.8513,0.7398,460.1313,460.1313,merchant,merchant
+NRG,NRG Energy,electric,merchant,Competitive generation and retail (ERCOT/PJM),12849.3785,12769.7285,11855.3004,0.0000,18.2755,0.0000,0.0000,0.9938,0.9226,0.0000,698.7347,698.7347,merchant,merchant
+TLN,Talen Energy,electric,merchant,Susquehanna nuclear; Amazon campus sale Mar 2024,9893.6100,9893.6100,9646.5000,2278.8000,9.2599,0.0000,0.0000,1.0000,0.9750,0.2303,1068.4309,1068.4309,merchant,merchant
+PEG,Public Service Enterprise Group,electric,hybrid,Regulated NJ utility plus merchant PJM nuclear (PSEG Power),4178.5914,4099.2914,4175.5914,4072.2940,42.0950,1.0000,0.0000,0.9810,0.9993,0.9746,97.3818,97.3818,hybrid,merchant
+NEE,NextEra Energy,electric,hybrid,Regulated FPL plus NextEra Energy Resources (largely contracted),47571.8162,8341.8782,1719.7000,6018.2046,147.4233,1.0000,1.0000,0.1754,0.0361,0.1265,56.5845,0.0000,hybrid,hybrid
+AES,AES Corporation,electric,hybrid,Mostly contracted generation plus regulated US utilities,12768.7270,9300.5520,1839.7000,0.0000,9.1509,1.0000,1.0000,0.7284,0.1441,0.0000,1016.3519,0.0000,hybrid,hybrid
+AEE,Ameren,electric,regulated,,10358.2000,0.0000,0.0000,1235.8000,23.7940,,,0.0000,0.0000,0.1193,0.0000,0.0000,regulated,regulated
+AEP,American Electric Power,electric,regulated,,27963.2970,543.9000,17712.4000,2285.3000,49.1185,,,0.0195,0.6334,0.0817,11.0732,11.0732,regulated,regulated
+CMS,CMS Energy,electric,regulated,,8020.7053,346.4512,1176.0000,0.0000,19.9140,,,0.0432,0.1466,0.0000,17.3974,17.3974,regulated,regulated
+CNP,CenterPoint Energy,electric,regulated,,603.9000,0.0000,0.0000,0.0000,20.6793,,,0.0000,0.0000,0.0000,0.0000,0.0000,regulated,regulated
+DTE,DTE Energy,electric,regulated,,12798.3025,266.7000,33.6000,1217.0000,25.0074,,,0.0208,0.0026,0.0951,10.6648,10.6648,regulated,regulated
+DUK,Duke Energy,electric,regulated,,57703.3319,4.9000,2048.5000,9293.8430,83.2272,,,0.0001,0.0355,0.1611,0.0589,0.0589,regulated,regulated
+D,Dominion Energy,electric,regulated,Millstone nuclear partly contracted with CT utilities,29164.4889,3165.6450,20870.5096,6285.2889,45.2429,1.0000,1.0000,0.1085,0.7156,0.2155,69.9699,0.0000,hybrid,hybrid
+ED,Consolidated Edison,electric,regulated,,782.8000,0.0000,0.0000,0.0000,30.9144,,,0.0000,0.0000,0.0000,0.0000,0.0000,regulated,regulated
+EIX,Edison International,electric,regulated,,3492.0168,0.0000,0.0000,665.1168,30.9101,,,0.0000,0.0000,0.1905,0.0000,0.0000,regulated,regulated
+ES,Eversource Energy,electric,regulated,,96.5574,44.8574,0.0000,0.0000,21.0425,,,0.4646,0.0000,0.0000,2.1318,2.1318,regulated,hybrid
+ETR,Entergy,electric,regulated,,27337.7720,0.0000,2.4000,4080.7000,32.5128,,,0.0000,0.0001,0.1493,0.0000,0.0000,regulated,regulated
+EVRG,Evergy,electric,regulated,,12988.8613,0.0000,0.0000,1218.5220,14.1550,,,0.0000,0.0000,0.0938,0.0000,0.0000,regulated,regulated
+EXC,Exelon,electric,regulated,Wires-only after the 2022 Constellation spin-off,2.5000,0.0000,2.5000,0.0000,37.8218,,,0.0000,1.0000,0.0000,0.0000,0.0000,regulated,regulated
+FE,FirstEnergy,electric,regulated,,3250.4000,22.0000,3250.4000,0.0000,22.9259,,,0.0068,1.0000,0.0000,0.9596,0.9596,regulated,regulated
+LNT,Alliant Energy,electric,regulated,,8597.9199,0.0000,0.0000,0.0000,15.1753,,,0.0000,0.0000,0.0000,0.0000,0.0000,regulated,regulated
+NI,NiSource,electric,regulated,Gas and electric,2283.5000,0.0000,0.0000,0.0000,17.1588,,,0.0000,0.0000,0.0000,0.0000,0.0000,regulated,regulated
+PCG,PG&E,electric,regulated,,7796.9000,0.0000,0.0000,2323.0000,44.2650,,,0.0000,0.0000,0.2979,0.0000,0.0000,regulated,regulated
+PNW,Pinnacle West,electric,regulated,,7540.3996,0.0000,0.0000,1224.9936,9.6383,,,0.0000,0.0000,0.1625,0.0000,0.0000,regulated,regulated
+PPL,PPL Corporation,electric,regulated,,8492.9750,4.8000,4.8000,0.0000,23.9545,,,0.0006,0.0006,0.0000,0.2004,0.2004,regulated,regulated
+SO,Southern Company,electric,regulated,Includes Southern Power (contracted wholesale),42095.1059,8236.9000,0.0000,4830.9540,90.1964,1.0000,1.0000,0.1957,0.0000,0.1148,91.3218,0.0000,hybrid,hybrid
+SRE,Sempra,electric,regulated,Gas and electric (Oncor T&D),917.5000,0.0000,0.0000,0.0000,55.5618,,,0.0000,0.0000,0.0000,0.0000,0.0000,regulated,regulated
+WEC,WEC Energy Group,electric,regulated,,6680.5850,620.3000,0.0000,0.0000,29.7499,,,0.0929,0.0000,0.0000,20.8505,20.8505,regulated,regulated
+XEL,Xcel Energy,electric,regulated,,22866.1913,0.0000,0.0000,1871.2000,38.7728,,,0.0000,0.0000,0.0818,0.0000,0.0000,regulated,regulated
+IDA,IDACORP,electric,regulated,,3684.3558,0.0000,0.0000,0.0000,5.8213,,,0.0000,0.0000,0.0000,0.0000,0.0000,regulated,regulated
+OGE,OGE Energy,electric,regulated,,8001.2370,0.0000,0.0000,0.0000,8.2891,,,0.0000,0.0000,0.0000,0.0000,0.0000,regulated,regulated
+POR,Portland General Electric,electric,regulated,,3760.7123,0.0000,0.0000,0.0000,4.6000,,,0.0000,0.0000,0.0000,0.0000,0.0000,regulated,regulated
+TXNM,TXNM Energy,electric,regulated,Formerly PNM Resources (renamed 2024),1760.8352,0.0000,0.0000,429.3792,4.4352,,,0.0000,0.0000,0.2438,0.0000,0.0000,regulated,regulated
+AVA,Avista,electric,regulated,,1787.9100,0.0000,0.0000,0.0000,2.9005,,,0.0000,0.0000,0.0000,0.0000,0.0000,regulated,regulated
+NWE,NorthWestern Energy,electric,regulated,,1663.0481,0.0000,0.0000,0.0000,3.2779,,,0.0000,0.0000,0.0000,0.0000,0.0000,regulated,regulated
+BKH,Black Hills,electric,regulated,,1386.2900,342.7500,0.0000,0.0000,4.1885,1.0000,1.0000,0.2472,0.0000,0.0000,81.8319,0.0000,hybrid,hybrid
+OTTR,Otter Tail,electric,regulated,Also manufacturing segments,1274.4890,0.0000,0.0000,0.0000,3.0886,,,0.0000,0.0000,0.0000,0.0000,0.0000,regulated,regulated
+MGEE,MGE Energy,electric,regulated,,1238.4310,0.0000,0.0000,0.0000,3.4021,,,0.0000,0.0000,0.0000,0.0000,0.0000,regulated,regulated
+AWK,American Water Works,placebo,placebo,Water utility; no electricity exposure,0.0000,0.0000,0.0000,0.0000,24.2624,,,,,,0.0000,0.0000,placebo,placebo
+WTRG,Essential Utilities,placebo,placebo,Water and gas distribution,0.0000,0.0000,0.0000,0.0000,9.9739,,,,,,0.0000,0.0000,placebo,placebo
+ATO,Atmos Energy,placebo,placebo,Gas distribution,0.0000,0.0000,0.0000,0.0000,21.6456,,,,,,0.0000,0.0000,placebo,placebo
+OGS,ONE Gas,placebo,placebo,Gas distribution,0.0000,0.0000,0.0000,0.0000,3.9234,,,,,,0.0000,0.0000,placebo,placebo
+SWX,Southwest Gas,placebo,placebo,Gas distribution plus utility infrastructure services,0.0000,0.0000,0.0000,0.0000,5.0730,,,,,,0.0000,0.0000,placebo,placebo
+SR,Spire,placebo,placebo,Gas distribution,0.0000,0.0000,0.0000,0.0000,3.9206,,,,,,0.0000,0.0000,placebo,placebo

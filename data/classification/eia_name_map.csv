@@ -1,0 +1,40 @@
+ticker,include,exclude
+VST,vistra|luminant|energy harbor|dynegy,
+CEG,^constellation,
+NRG,\bNRG\b|midwest generations eme,NRG Yield|NRG Renew|NRG Solar|NRG Energy Gas & Wind|NRG Energy Center|NRG MN Community|dynegy
+TLN,^talen|^brunner island llc|^brandon shores llc|^h\.a\. wagner llc|^mc project company,
+PEG,^PSEG|public service elec,
+NEE,florida power & light|^FPL\b|nextera|gulf power,
+AES,^AES\b|dayton power|indianapolis power,
+AEE,union electric|^ameren,
+AEP,appalachian power|indiana michigan power|^ohio power|southwestern electric power|public service co of oklahoma|kentucky power|kingsport power|wheeling power|AEP generat|^AEP\b,AEP Onsite|AEP Renewables
+CMS,consumers energy|^CMS\b,
+CNP,centerpoint|southern indiana gas|vectren,
+DTE,^DTE\b|detroit edison,
+DUK,duke energy,Duke Energy Renewables|Duke Energy DEGS
+D,virginia electric|dominion energy|dominion renewable,old dominion
+ED,consolidated edison|con edison|orange & rockland,Edison Development|Edison Solutions
+EIX,southern california edison,
+ES,eversource|nstar|connecticut light|public service co of nh|western massachusetts elec,
+ETR,^entergy,
+EVRG,evergy|kansas city power|westar|kansas gas & electric,
+EXC,commonwealth edison|^PECO\b|baltimore gas|potomac electric|delmarva|atlantic city electric,
+FE,firstenergy|monongahela power|jersey central|ohio edison|toledo edison|cleveland electric|allegheny energy supply|west penn|potomac edison,
+LNT,interstate power|wisconsin power & light|^alliant,
+NI,northern indiana pub|NIPSCO|nisource,
+PCG,pacific gas & electric,
+PNW,arizona public service,
+PPL,^PPL\b|louisville gas|kentucky utilities|rhode island energy,
+SO,georgia power|alabama power|mississippi power|southern power co|^southern co\b,columbus southern
+SRE,san diego gas|^sempra|\boncor\b,
+WEC,wisconsin electric|wisconsin public service|^WEC\b|upper michigan energy|we energies,
+XEL,northern states power|public service co of colorado|southwestern public service|^xcel,
+IDA,idaho power,
+OGE,oklahoma gas & electric|^OG&E,
+POR,portland general,
+TXNM,public service co of n(ew )?m|^PNM\b|texas-new mexico power,
+AVA,^avista,
+NWE,northwestern energy|northwestern corp,
+BKH,black hills|cheyenne light,
+OTTR,otter tail,
+MGEE,madison gas,

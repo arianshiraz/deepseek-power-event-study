@@ -1,0 +1,46 @@
+ticker,name,sector_type,group_prelim,note
+VST,Vistra,electric,merchant,Competitive generation and retail (ERCOT/PJM); includes Energy Harbor nuclear since 2024
+CEG,Constellation Energy,electric,merchant,Largest US nuclear fleet; competitive generation; Microsoft Crane PPA Sept 2024
+NRG,NRG Energy,electric,merchant,Competitive generation and retail (ERCOT/PJM)
+TLN,Talen Energy,electric,merchant,Susquehanna nuclear; Amazon campus sale Mar 2024
+PEG,Public Service Enterprise Group,electric,hybrid,Regulated NJ utility plus merchant PJM nuclear (PSEG Power)
+NEE,NextEra Energy,electric,hybrid,Regulated FPL plus NextEra Energy Resources (largely contracted)
+AES,AES Corporation,electric,hybrid,Mostly contracted generation plus regulated US utilities
+AEE,Ameren,electric,regulated,
+AEP,American Electric Power,electric,regulated,
+CMS,CMS Energy,electric,regulated,
+CNP,CenterPoint Energy,electric,regulated,
+DTE,DTE Energy,electric,regulated,
+DUK,Duke Energy,electric,regulated,
+D,Dominion Energy,electric,regulated,Millstone nuclear partly contracted with CT utilities
+ED,Consolidated Edison,electric,regulated,
+EIX,Edison International,electric,regulated,
+ES,Eversource Energy,electric,regulated,
+ETR,Entergy,electric,regulated,
+EVRG,Evergy,electric,regulated,
+EXC,Exelon,electric,regulated,Wires-only after the 2022 Constellation spin-off
+FE,FirstEnergy,electric,regulated,
+LNT,Alliant Energy,electric,regulated,
+NI,NiSource,electric,regulated,Gas and electric
+PCG,PG&E,electric,regulated,
+PNW,Pinnacle West,electric,regulated,
+PPL,PPL Corporation,electric,regulated,
+SO,Southern Company,electric,regulated,Includes Southern Power (contracted wholesale)
+SRE,Sempra,electric,regulated,Gas and electric (Oncor T&D)
+WEC,WEC Energy Group,electric,regulated,
+XEL,Xcel Energy,electric,regulated,
+IDA,IDACORP,electric,regulated,
+OGE,OGE Energy,electric,regulated,
+POR,Portland General Electric,electric,regulated,
+TXNM,TXNM Energy,electric,regulated,Formerly PNM Resources (renamed 2024)
+AVA,Avista,electric,regulated,
+NWE,NorthWestern Energy,electric,regulated,
+BKH,Black Hills,electric,regulated,
+OTTR,Otter Tail,electric,regulated,Also manufacturing segments
+MGEE,MGE Energy,electric,regulated,
+AWK,American Water Works,placebo,placebo,Water utility; no electricity exposure
+WTRG,Essential Utilities,placebo,placebo,Water and gas distribution
+ATO,Atmos Energy,placebo,placebo,Gas distribution
+OGS,ONE Gas,placebo,placebo,Gas distribution
+SWX,Southwest Gas,placebo,placebo,Gas distribution plus utility infrastructure services
+SR,Spire,placebo,placebo,Gas distribution

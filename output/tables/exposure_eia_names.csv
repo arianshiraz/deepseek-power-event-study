@@ -1,0 +1,182 @@
+ticker,owner_or_operator_name,owned_mw
+VST,Luminant Generation Company LLC,9509.3
+VST,Energy Harbor Nuclear Generation LLC,4083.6
+VST,Dynegy -Moss Landing LLC,2148.0
+VST,Dynegy Hanging Rock Energy Facility,1429.8
+VST,Dynegy Kincaid Generation,1319.0
+VST,Dynegy Midwest Generation Inc,1259.6
+VST,Dynegy Kendall Energy LLC,1256.0
+VST,Luminant Miami Fort,1180.8
+VST,Vistra Energy,1157.8
+VST,Energy Harbor Corp.,1144.8
+VST,Vistra Corp,859.6
+VST,Dynegy Washington Energy Facility,714.9
+VST,Luminant Dick's Creek,159.1
+VST,"Dynegy Oakland, LLC",149.0
+CEG,Constellation Nuclear,23872.1
+CEG,"Constellation Power, Inc",7734.1
+CEG,"Constellation Power Source Generation, LLC",575.1
+CEG,Constellation Solar Horizons LLC,13.7
+NRG,NRG Texas Power LLC,9186.5
+NRG,Midwest Generations EME LLC,2157.6
+NRG,"NRG Energy, Inc",606.1
+NRG,NRG Energy Services LLC,537.4
+NRG,NRG Cedar Bayou Development Company LLC,267.8
+NRG,NRG Chalk Point CT,94.0
+TLN,TalenEnergy Susquehanna LLC,2278.8
+TLN,TalenEnergy Montour LLC,1757.9
+TLN,MC Project Company LLC,1701.0
+TLN,Brunner Island LLC,1616.1
+TLN,Brandon Shores LLC,1370.2
+TLN,H.A. Wagner LLC,922.5
+TLN,Talen Montana LLC,247.1
+PEG,PSEG Nuclear LLC,2658.1
+PEG,Public Service Elec & Gas Co,1517.5
+PEG,PSEG Solar Source,3.0
+NEE,Florida Power & Light Co,38458.9
+NEE,NextEra Energy Point Beach LLC,1311.0
+NEE,NextEra Energy Seabrook LLC,1095.8
+NEE,Gulf Power Co,771.0
+NEE,FPL Energy Wyman LLC,763.7
+NEE,FPL Energy Horse Hollow LLC,735.5
+NEE,NextEra Energy Operating Services LLC,423.1
+NEE,FPL Energy Vansycle LLC,299.7
+NEE,NextEra Energy Seiling Wind,297.6
+NEE,FPL Energy Upton Wind LP,278.0
+NEE,FPL Energy Illinois Wind LLC,237.5
+NEE,FPL Energy New Mexico Wind LLC,204.0
+NEE,FPL Energy Crystal Lake Wind II LLC,200.0
+NEE,FPL Peetz Table Wind Energy,199.5
+NEE,FPL Energy Langdon Wind LLC,159.0
+NEE,FPL Energy Crystal Lake Wind LLC,150.0
+NEE,FPL Energy Story Wind LLC,150.0
+NEE,FPL Energy Ashtabula Wind LLC,148.5
+NEE,"FPL Energy Weatherford, LLC",147.0
+NEE,"NextEra Renewable Fuels, LLC",118.9
+NEE,"FPL Energy Callahan Wind, LLC",114.0
+NEE,NextEra Wolf Ridge LLC,112.5
+NEE,NextEra Energy Resources Breckinridge,110.2
+NEE,FPL Energy Stateline II Inc,102.3
+NEE,NextEra Energy Resources Ensign Wind,98.9
+NEE,"FPL Energy Hancock County Wind, LLC",98.0
+NEE,FPL Energy Red Canyon LLC,84.0
+NEE,NextEra Energy Majestic Wind,79.6
+NEE,"NextEra Energy Montezuma Wind II, LLC",78.2
+NEE,FPL Energy North Dakota Wind LLC,61.5
+NEE,NextEra Energy Partners LP,52.2
+NEE,FPL Energy Oklahoma Wind LLC,51.0
+NEE,FPL Energy Sooner Wind LLC,51.0
+NEE,FPL Energy Oliver County Wind,50.6
+NEE,"FPL Energy Operating Services, Inc.",49.5
+NEE,FPL Energy Burleigh County Wind LLC,49.5
+NEE,FPL Energy Oliver County Wind II LLC,48.0
+NEE,FPL Energy South Dakota Wind LLC,40.5
+NEE,FPL Energy Montezuma Wind,36.8
+NEE,FPL Energy Cape LLC,35.0
+NEE,"NextEra Energy Desert Sunlight 250, LLC",13.2
+NEE,Nextera Energy Resources,6.5
+AES,AES Distributed Energy,4192.5
+AES,AES Indiana,3468.2
+AES,AES Clean Energy,2898.1
+AES,AES Alamitos LLC,1115.0
+AES,"AES Alamitos Energy, LLC",408.4
+AES,"AES Huntington Beach Energy, LLC",356.6
+AES,AES Huntington Beach LLC,218.0
+AES,"AES ES Alamitos, LLC",100.0
+AES,"AES ES GILBERT, LLC",10.0
+AES,"AES Griggs Solar, LLC",2.0
+AEE,Union Electric Co - (MO),10358.2
+AEP,Appalachian Power Co,6659.0
+AEP,Southwestern Electric Power Co,5411.2
+AEP,Indiana Michigan Power Co,4942.6
+AEP,Public Service Co of Oklahoma,4839.7
+AEP,"East Kentucky Power Coop, Inc",3653.8
+AEP,Kentucky Power Co,1096.8
+AEP,Wheeling Power Co,816.3
+AEP,"Ohio Power Partners, LLC",543.9
+CMS,Consumers Energy Co - (MI),7674.3
+CMS,CMS Generation MI Power LLC,272.5
+CMS,CMS Generation Holdings Co,38.2
+CMS,CMS Generation Filer City Inc,35.0
+CMS,CMS Generation Genesee Co,0.4
+CMS,CMS Generation Grayling Co,0.4
+CNP,Southern Indiana Gas & Elec Co,603.9
+DTE,DTE Electric Company,12531.6
+DTE,DTE Sustainable Generation,110.3
+DTE,DTE Stockton LLC,54.0
+DTE,DTE Energy Services,28.0
+DTE,DTE Calvert City LLC,26.7
+DTE,"DTE Ashtabula, LLC",26.1
+DTE,DTE San Diego COGEN Inc.,11.3
+DTE,"DTE Atlantic, LLC",7.5
+DTE,DTE Biomass,2.8
+DUK,"Duke Energy Carolinas, LLC",21855.7
+DUK,Duke Energy Progress - (NC),14130.7
+DUK,"Duke Energy Florida, LLC",13136.0
+DUK,"Duke Energy Indiana, LLC",7219.5
+DUK,Duke Energy Kentucky Inc,1352.5
+DUK,Duke Energy Florida Solar Solutions,4.9
+DUK,Duke Energy Ohio Inc,4.0
+D,Virginia Electric & Power Co,18412.1
+D,"Dominion Energy South Carolina, Inc",5778.1
+D,Dominion Energy Nuclear Conn Inc,2171.7
+D,Dominion Renewable Energy,1498.7
+D,Dominion Energy Inc.,1303.8
+ED,Consolidated Edison Co-NY Inc,779.8
+ED,Orange & Rockland Utils Inc,3.0
+EIX,Southern California Edison Co,3492.0
+ES,NSTAR Electric Company,45.1
+ES,Eversource,25.0
+ES,Public Service Co of NH,19.9
+ES,Western Massachusetts Electric Company,6.6
+ETR,Entergy Louisiana LLC,12765.4
+ETR,Entergy Arkansas LLC,5876.4
+ETR,Entergy Texas Inc.,3826.5
+ETR,Entergy Mississippi LLC,3282.1
+ETR,"Entergy New Orleans, LLC",763.1
+ETR,Entergy Corp,694.6
+ETR,"Entergy Power, LLC",129.6
+EVRG,Evergy Metro,5348.7
+EVRG,"Evergy Kansas Central, Inc",4367.5
+EVRG,Evergy Missouri West,1663.3
+EVRG,"Evergy Kansas South, Inc",1609.5
+EXC,Baltimore Gas & Electric Co,2.5
+FE,Monongahela Power Co,3228.4
+FE,FirstEnergy Generation Corp,22.0
+LNT,Interstate Power and Light Co,4345.3
+LNT,Wisconsin Power & Light Co,4252.6
+NI,Northern Indiana Pub Serv Co,2283.5
+PCG,Pacific Gas & Electric Co.,7796.9
+PNW,Arizona Public Service Co,7540.4
+PPL,Kentucky Utilities Co,5553.5
+PPL,Louisville Gas & Electric Co,2934.7
+PPL,PPL New Jersey Biogas LLC,4.8
+SO,Georgia Power Co,16383.3
+SO,Alabama Power Co,13592.3
+SO,Southern Power Co,8236.9
+SO,Mississippi Power Co,3882.6
+SRE,San Diego Gas & Electric Co,917.5
+WEC,Wisconsin Electric Power Co,3081.1
+WEC,Wisconsin Public Service Corp,2791.1
+WEC,WEC Energy Group,620.3
+WEC,Upper Michigan Energy Resources Company,188.0
+XEL,Northern States Power Co - Minnesota,10244.9
+XEL,Public Service Co of Colorado,7196.8
+XEL,Southwestern Public Service Co,5424.5
+IDA,Idaho Power Co,3684.4
+OGE,Oklahoma Gas & Electric Co,8001.2
+POR,Portland General Electric Co,3760.7
+TXNM,Public Service Co of NM,1664.7
+TXNM,PNM Resources,96.1
+AVA,Avista Corp,1787.9
+NWE,NorthWestern Energy (MT Hydro),708.8
+NWE,NorthWestern Energy - (SD),489.7
+NWE,NorthWestern Energy (MT wind/thermal),464.5
+BKH,"Black Hills Power, Inc.",503.3
+BKH,"Black Hills Colorado Electric, LLC",343.3
+BKH,"Black Hills Colorado IPP, LLC",200.0
+BKH,Cheyenne Light Fuel & Power,196.9
+BKH,Black Hills Electric Generation LLC,73.9
+BKH,Black Hills Wyoming Inc,68.8
+OTTR,Otter Tail Power Co,1274.5
+MGEE,Madison Gas & Electric Co,1238.4

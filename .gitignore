@@ -1,0 +1,17 @@
+# Downloaded data are not redistributed
+data/raw/*
+!data/raw/README.md
+data/derived/*
+!data/derived/.gitkeep
+!data/derived/exposure.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
