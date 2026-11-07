@@ -91,6 +91,6 @@ Tables go to `output/tables/` and figures to `output/figures/`. Yahoo data can b
 
 ## Author and license
 
-Arian Nasrollahi Shiraz. This is a pilot study for a PhD research agenda on electricity markets and AI-driven demand. It is a research artifact, not a peer-reviewed publication.
+Arian Nasrollahi Shiraz. This is a pilot study on electricity markets and AI-driven demand. It is a research artifact, not a peer-reviewed publication.
 
 Code is released under the [MIT License](LICENSE). Downloaded data (Yahoo Finance, EIA-860) are not redistributed and remain subject to their providers' terms. Facts from SEC filings are cited in `data/classification/contract_status.csv`.
