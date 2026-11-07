@@ -4,7 +4,7 @@ Written on 6 November 2026, before computing any firm's exposure measures.
 
 **Disclosure.** The preliminary event-day returns (run of 5 November 2026) had already been seen when this rule was written. To limit the room this leaves for choosing groups after seeing the results:
 1. Group assignment follows mechanically from the measures below, using thresholds fixed here.
-2. The main cross-sectional test uses the **continuous** exposure measure, not the groups, so the thresholds are not load-bearing.
+2. The main cross-sectional test uses the continuous exposure measure, not the groups, so the thresholds are not load-bearing.
 3. Any firm whose group differs from the preliminary list is reported, together with results under both versions.
 
 ## Primary measure: non-regulated capacity share (NR share)
@@ -24,7 +24,9 @@ For each firm, NR share is the share of its operable nameplate capacity (MW, own
 
 ## Contract adjustment (10-K)
 
-NR share measures exposure to markets rather than to cost-of-service rates. Non-regulated capacity sold under long-term contracts is largely insulated from short-run news about prices. For every firm with NR share ≥ 10%, the latest 10-K before the event (fiscal year 2024, or 2023 if the 2024 filing came after 27 January 2025) is checked for how much of its non-regulated capacity or margin is contracted. The finding is recorded with a quotation reference in `firms.csv`.
+NR share measures exposure to markets rather than to cost-of-service rates. Non-regulated capacity sold under long-term contracts is largely insulated from short-run news about prices. For every firm with NR share ≥ 10%, the latest 10-K before the event (fiscal year 2024, or 2023 if the 2024 filing came after 27 January 2025) is checked for how much of its non-regulated capacity or margin is contracted. The finding is recorded, with the filing and section, in `contract_status.csv`.
+
+All ten checks were done on 6 November 2026. Every FY2024 10-K was filed after the event, so the FY2023 10-K (filed February 2024) was used for nine firms. Talen filed no FY2023 10-K, so its Q3 2024 10-Q was used. No flag changed. One input is still from press: Millstone's total annual output, used to judge that about half of it is contracted. Merchants hedge heavily near-term (Vistra 98% of 2024 generation, PSEG 90% to 95%), but those hedges cover one to three years. Equity value depends on longer horizons, so these fleets are treated as uncontracted.
 
 ## Group thresholds (fixed)
 
@@ -39,10 +41,10 @@ NR share measures exposure to markets rather than to cost-of-service rates. Non-
 
 These were made after the EIA measures were computed but before the event study was re-run on them. Each fixes a measurement problem visible in the EIA data, not in the returns. Results under the strict v1.0 rule are reported alongside.
 
-1. **Co-owned plants.** EIA's `Regulatory Status` is a plant-level label that follows the operator. A regulated utility's stake in a plant run by an IPP (for example, Avista's and NorthWestern's shares of Colstrip, which Talen operates) was therefore counted as non-regulated. Now, for a share held by a co-owner other than the operator, the owner's EIA entity type decides: IPP, industrial or commercial means non-regulated. Otherwise the plant label is used.
+1. **Co-owned plants.** EIA's `Regulatory Status` is a plant-level label that follows the operator. A regulated utility's stake in a plant run by an IPP (for example, Avista's and NorthWestern's shares of Colstrip, which Talen operates) was therefore counted as non-regulated. Now, for a share held by a co-owner other than the operator, the owner's EIA entity type sets the label: IPP, industrial or commercial means non-regulated. Otherwise the plant label is used.
 2. **Stale EIA owner names.** Assets sold before 2024 but still listed under the old owner name are excluded or reassigned (`data/classification/eia_name_map.csv` and `eia_overrides.csv`): Con Edison's clean-energy businesses (sold to RWE), Duke Energy Renewables (sold to Brookfield), AEP's OnSite Partners and AEP Renewables, and PSEG's Keys plant. PSEG's stakes listed under "Public Service Elec & Gas" in plants it does not operate (for example, Peach Bottom) belong to PSEG Power and are set to non-regulated. Each of these needs a sale date confirmed.
 3. **Wires-only utilities.** Firms owning under 1,000 MW of generation (Exelon, Eversource, CenterPoint, Con Edison, Sempra) are classified regulated whatever their NR share. Their NR share comes from a few MW and carries no information.
-4. **Merchant requires no cost-of-service utility.** Under v1.0, PSEG (98% of owned generation non-regulated) would be merchant, but most of its equity value is the regulated PSE&G utility. Generation capacity share ignores firm value. That is why the **primary continuous measure is now uncontracted non-regulated MW per $bn of equity market value** (31 Dec 2024), `merchant_mw_per_bn`. Under v1.1 PSEG is hybrid. The v1.0 version (PSEG merchant) is reported as `group_v10`.
+4. **Merchant requires no cost-of-service utility.** Under v1.0, PSEG (98% of owned generation non-regulated) would be merchant, but most of its equity value is the regulated PSE&G utility. Generation capacity share ignores firm value. For this reason the primary continuous measure is uncontracted non-regulated MW per $bn of equity market value at 31 Dec 2024 (`merchant_mw_per_bn`). Under v1.1 PSEG is hybrid. The v1.0 version (PSEG merchant) is reported as `group_v10`.
 5. **Contract adjustment as a binary flag.** `merchant_mw_per_bn` is set to zero where the evidence (`contract_status.csv`) says the non-regulated fleet is mostly under long-term contract. The unadjusted `nr_mw_per_bn` is reported too.
 
 ## Result of the freeze
@@ -59,8 +61,7 @@ The four merchants (CEG, VST, NRG, TLN) and the placebo group are unchanged.
 ## Known limits
 
 - **Name mapping misses some assets.** Project-company names that do not reveal the parent are missed, so NR share for developers with many project LLCs (NextEra Energy Resources, AES) is a lower bound. Vistra is the largest known gap: EIA mapping finds about 26 GW against roughly 41 GW in company materials (to verify), so its intensity is understated.
-- **Contract evidence (verified 6 November 2026).** Every entry in `contract_status.csv` was checked against the latest periodic filing before the event: the FY2023 10-K, filed February 2024, for nine firms, and Talen's Q3 2024 10-Q, since Talen filed no FY2023 10-K. No flag changed. One input is still from press: Millstone's total annual output, used to judge that about half its output is contracted. Merchants hedge heavily near-term (Vistra 98% of 2024 generation, PSEG 90% to 95%), but hedges cover one to three years. Equity value depends on longer horizons, so these fleets are still treated as uncontracted.
 - **The contract flag is binary.** NextEra reports 1,842 MW of merchant capacity, and Dominion's Millstone is about half uncontracted. Both are set to zero uncontracted MW. Using reported merchant MW instead is a natural robustness check.
-- **The continuous slope rests on few firms.** It is identified mainly by the four merchants and PSEG; every other electric utility has uncontracted intensity near zero.
+- **The continuous slope rests on few firms.** It is identified mainly by the four merchants and PSEG. Every other electric utility has uncontracted intensity near zero.
 - **EIA's regulatory status is a plant-level label.** It does not reflect contracts.
 - **Capacity is not earnings.** A firm with a small but high-margin merchant fleet may be more exposed than its capacity share suggests.

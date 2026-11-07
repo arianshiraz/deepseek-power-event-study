@@ -6,7 +6,7 @@ An event study of how US power-sector stocks reacted on 27 January 2025, when De
 
 ## Research question
 
-When expectations about AI electricity demand move, whose value moves with them? If market-priced generators capture the value of expected AI load, other consumers pay for it through wholesale prices. Equity returns give an early, market-implied measure of that incidence.
+When expectations about AI electricity demand move, whose value moves with them? Equity returns give an early, market-implied measure of who captures the rents from new load: generators selling at market prices, regulated utilities, or firms whose output is already contracted. They do not show who ultimately pays. That depends on whether the rents come through wholesale and capacity prices or through premiums in contracts with data-centre buyers.
 
 Full design, hypotheses and preliminary results: [`docs/research_design.md`](docs/research_design.md)
 
@@ -16,19 +16,19 @@ On the event day, merchant generators earned an abnormal return of about −19% 
 
 ![Mean cumulative abnormal returns by group, with 95% intervals across firms](output/figures/fig1_deepseek_car_paths.png)
 
-## Good news and bad news move the same firms
+## Stacked-event test
 
-The same exposure measure predicts returns on three earlier AI-electricity events, with the sign flipping between good and bad news: the July 2024 PJM capacity auction (+), the Constellation and Microsoft Crane PPA (+), and FERC's rejection of the Talen and Amazon agreement (−). Stacking all four events, the sign-adjusted slope is +0.90 percentage points per 100 MW/$bn (firm-clustered p = 0.001). It is larger than in all 2,000 placebo draws of four random non-event dates. Dropping DeepSeek leaves +0.68.
+The same exposure measure predicts returns on three earlier AI-electricity events, and the sign of the relationship flips between good and bad news: the July 2024 PJM capacity auction (+), the Constellation and Microsoft Crane PPA (+), and FERC's rejection of the Talen and Amazon agreement (−). Stacking all four events, the sign-adjusted slope is +0.90 percentage points per 100 MW/$bn (firm-clustered p = 0.001). It is larger than in all 2,000 placebo draws of four random non-event dates. Dropping DeepSeek leaves +0.68.
 
 ![Exposure slope by event](output/figures/fig2_event_slopes.png)
 
 ![Firm returns against exposure, by event](output/figures/fig3_event_scatter.png)
 
-## Is it just "AI-stock beta"?
+## Controlling for AI-stock beta
 
 Merchant generators traded as AI stocks: their sensitivity to semiconductor stocks is correlated 0.88 with the exposure measure. In the pre-specified test, I computed abnormal returns from a two-factor model (market plus an AI-stock factor, SMH or NVDA), which removes each firm's predicted response to that day's AI-stock move. The exposure slope barely changes (+0.80 to +0.85, against +0.90), and it still exceeds all 2,000 placebo draws.
 
-On the Crane PPA day the AI factor fell while merchants rose. On the FERC day it rose while merchants fell. General AI sentiment cannot produce those signs.
+On the Crane PPA day the AI factor fell while merchants rose. On the FERC day it rose while merchants fell. A general AI-sentiment channel predicts the opposite sign on both days.
 
 A fully flexible control (a separate AI-beta coefficient for each event) does absorb the effect. With the two variables this collinear, it cannot tell the explanations apart. On DeepSeek day alone they cannot be separated either.
 
@@ -87,6 +87,7 @@ Tables go to `output/tables/` and figures to `output/figures/`. Yahoo data can b
 - Market-model abnormal returns.
 - Three inference approaches that allow for a common event date: equal-weighted portfolio tests, Kolari and Pynnönen (2010) adjusted BMP tests, and a placebo-day distribution for the cross-sectional slope.
 - A pre-specified stacked-event test across four AI-electricity events, with placebo-date permutation inference.
+- A pre-specified control for each firm's sensitivity to AI stocks (two-factor abnormal returns).
 
 ## Author and license
 
