@@ -1,0 +1,9 @@
+factor,spec,beta,se_firm_cluster,p_firm_cluster,N,n_events,p_placebo_one_sided,placebo_draws,ai_pred_coef,ai_pred_p
+SMH,"market model, no control (reference)",0.00900,0.00276,0.00109,178,4,0.00000,2000,,
+SMH,two-factor abnormal returns (primary),0.00799,0.00266,0.00272,178,4,0.00000,2000,,
+SMH,market model + event-specific AI-beta control,0.00132,0.00243,0.58808,178,4,0.22350,2000,,
+SMH,exploratory: market model + AI beta x factor move,0.00679,0.00265,0.01028,178,4,0.00100,2000,2.18027,0.00000
+NVDA,"market model, no control (reference)",0.00900,0.00276,0.00109,178,4,0.00000,2000,,
+NVDA,two-factor abnormal returns (primary),0.00847,0.00272,0.00185,178,4,0.00000,2000,,
+NVDA,market model + event-specific AI-beta control,-0.00138,0.00215,0.52034,178,4,0.78600,2000,,
+NVDA,exploratory: market model + AI beta x factor move,0.00698,0.00280,0.01274,178,4,0.00250,2000,3.81431,0.00000

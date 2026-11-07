@@ -9,6 +9,8 @@ TABLES = ROOT / "output" / "tables"
 FIGURES = ROOT / "output" / "figures"
 
 MARKET_TICKER = "SPY"
+# AI factors for the AI-beta control (docs/research_design.md, section 8d); first is primary.
+AI_FACTORS = ["SMH", "NVDA"]
 
 # Download range: covers a ~260-trading-day estimation window before the earliest stacked
 # event (30 Jul 2024) and 20 days after the DeepSeek event.

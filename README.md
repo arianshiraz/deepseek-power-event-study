@@ -24,6 +24,16 @@ The same exposure measure predicts returns on three earlier AI-electricity event
 
 ![Firm returns against exposure, by event](output/figures/fig3_event_scatter.png)
 
+## Is it just "AI-stock beta"?
+
+Merchant generators traded as AI stocks: their sensitivity to semiconductor stocks is correlated 0.88 with the exposure measure. In the pre-specified test, I computed abnormal returns from a two-factor model (market plus an AI-stock factor, SMH or NVDA), which removes each firm's predicted response to that day's AI-stock move. The exposure slope barely changes (+0.80 to +0.85, against +0.90), and it still exceeds all 2,000 placebo draws.
+
+On the Crane PPA day the AI factor fell while merchants rose. On the FERC day it rose while merchants fell. General AI sentiment cannot produce those signs.
+
+A fully flexible control (a separate AI-beta coefficient for each event) does absorb the effect. With the two variables this collinear, it cannot tell the explanations apart. On DeepSeek day alone they cannot be separated either.
+
+![Exposure slope under AI-beta controls](output/figures/fig5_ai_beta_control.png)
+
 ## Reproducing
 
 Requires Python 3.10 or later, and R 4.3 or later with `tidyplots`, `ggdist`, `distributional`, `dplyr`, `readr` and `tidyr` for the figures.
@@ -33,12 +43,15 @@ pip install -r requirements.txt
 python run_all.py
 ```
 
-`run_all.py` runs five stages:
-1. `code/01_download_prices.py` downloads prices and market caps from Yahoo Finance.
+`run_all.py` runs six stages:
+1. `code/01_download_prices.py` downloads prices, market caps and AI-factor prices (SMH, NVDA) from Yahoo Finance.
 2. `code/02_build_exposure.py` builds exposure measures from EIA-860 2024, downloading about 21 MB from eia.gov.
 3. `code/03_event_study.py` runs the DeepSeek event study.
 4. `code/04_stacked_events.py` runs the stacked-event test.
-5. `code/05_figures.R` draws the figures. If `Rscript` is not on PATH, set the `RSCRIPT` environment variable to its location. Tables go to `output/tables/` and the figure to `output/figures/`. Yahoo data can be revised over time, so a fresh download may differ slightly from the committed results. The download timestamp is recorded in `data/raw/download_meta.json`.
+5. `code/05_ai_beta.py` runs the AI-beta control.
+6. `code/06_figures.R` draws the figures. If `Rscript` is not on PATH, set the `RSCRIPT` environment variable to its location.
+
+Tables go to `output/tables/` and figures to `output/figures/`. Yahoo data can be revised over time, so a fresh download may differ slightly from the committed results. The download timestamp is recorded in `data/raw/download_meta.json`.
 
 ## Repository layout
 
@@ -51,7 +64,8 @@ python run_all.py
 │   ├── 02_build_exposure.py
 │   ├── 03_event_study.py
 │   ├── 04_stacked_events.py
-│   ├── 05_figures.R            # tidyplots + ggdist
+│   ├── 05_ai_beta.py           # AI-beta control (section 8d)
+│   ├── 06_figures.R            # tidyplots + ggdist
 │   └── es_utils.py             # shared event-study helpers
 ├── data/
 │   ├── classification/         # committed hand-coded inputs

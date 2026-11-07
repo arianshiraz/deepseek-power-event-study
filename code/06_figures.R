@@ -1,5 +1,5 @@
 # Figures for the DeepSeek / stacked-event study (tidyplots + ggdist).
-# Run from the repository root after the Python stages: Rscript code/05_figures.R
+# Run from the repository root after the Python stages: Rscript code/06_figures.R
 # Each figure is written as PDF (paper) and PNG (README).
 
 suppressPackageStartupMessages({
@@ -122,5 +122,28 @@ p4 <- ggplot(draws, aes(x = beta_pp)) +
   theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(),
         axis.line.y = element_blank())
 save_both(p4, "fig4_placebo_dates", 150, 70)
+
+# Figure 5. Pooled exposure slope under the AI-beta control specifications (section 8d).
+spec_labels <- c(
+  "market model, no control (reference)" = "Reference: market model",
+  "two-factor abnormal returns (primary)" = "Two-factor returns (primary)",
+  "market model + event-specific AI-beta control" = "Free event-specific AI-beta control",
+  "exploratory: market model + AI beta x factor move" = "AI beta x AI move (exploratory)")
+ab <- tab("ai_beta_pooled.csv") |>
+  mutate(spec = factor(spec_labels[spec], levels = rev(spec_labels)),
+         factor = factor(factor, levels = c("SMH", "NVDA")),
+         est = 100 * beta, se = 100 * se_firm_cluster)
+factor_cols <- c(SMH = okabe[5], NVDA = okabe[7])
+
+p5 <- ggplot(ab, aes(y = spec, xdist = dist_normal(est, se), color = factor, fill = factor)) +
+  geom_vline(xintercept = 0, linetype = 2, linewidth = 0.3) +
+  stat_halfeye(.width = c(0.5, 0.95), slab_alpha = 0.2, point_size = 1.4,
+               position = position_dodge(width = 0.55), normalize = "groups") +
+  scale_color_manual(values = factor_cols, name = "AI factor") +
+  scale_fill_manual(values = factor_cols, name = "AI factor") +
+  labs(x = "Pooled sign-adjusted slope (pp per 100 MW/$bn), 4 events", y = NULL) +
+  theme_classic(base_size = 8) +
+  theme(legend.position = "bottom")
+save_both(p5, "fig5_ai_beta_control", 150, 85)
 
 cat("figures written to", fig, "\n")

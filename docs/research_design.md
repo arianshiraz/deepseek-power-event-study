@@ -193,6 +193,51 @@ All four slopes have the predicted sign. If signs were random and independent, t
 - Day-0 timing for the auction results and the FERC order is unconfirmed; the [0,1] window covers both possibilities.
 - The events were chosen as salient AI-electricity news, not drawn by a rule. A rule-based event list (for example, every hyperscaler power deal above a size threshold) would make the selection harder to question.
 
+## 8d. AI-beta control (pre-specified 7 November 2026)
+
+Written before estimating any of the regressions below.
+
+**Threat.** Merchant generators traded as "AI stocks" through 2024. Their event-day moves may reflect general sensitivity to AI sentiment, or a crowded trade unwinding, rather than their exposure to electricity prices.
+
+**AI factor.** Daily return on the VanEck Semiconductor ETF (SMH), orthogonalised to the market: the residual from regressing SMH returns on SPY returns within each event's estimation window. NVIDIA (NVDA) is the alternative factor. Each firm's **AI beta** is its loading on this factor in
+
+r_i = a + b_m · r_m + b_ai · r_ai⊥ + e,
+
+estimated over the same window as the market model (days −260 to −11, excluding days −1 to +1 around all four events).
+
+**Specifications** (stacked, CAR[0,1], parties excluded, as in 8c):
+1. **Primary: two-factor abnormal returns.** Compute abnormal returns from the two-factor model, so each firm's predicted response to the event-day AI-factor move is removed, then re-estimate the pooled β. Placebo-date inference uses residuals from a full-sample two-factor model.
+2. **Cross-sectional control.** Keep market-model CARs and add b_ai with an event-specific coefficient: CAR_ie = α_e + γ_e · placebo_i + δ_e · b_ai,ie + β · (s_e · x_ie) + ε_ie.
+3. **Both specifications with NVDA** in place of SMH.
+4. **DeepSeek day alone:** CAR[0,0] on x, b_ai and the placebo dummy.
+
+**Prediction (H5).** β stays positive and outside the placebo distribution.
+
+**Interpretation caveat, stated in advance.** This control may be a "bad control". If AI-load news moves merchant values, then merchants' co-movement with AI stocks during 2024 is partly *caused* by their electricity exposure. Controlling for AI beta may then absorb part of the very mechanism being tested.
+- If β survives, there is an electricity-specific channel beyond general AI sentiment.
+- If β shrinks to zero, the two explanations cannot be separated with these data. That does not show the electricity channel is absent.
+
+### Results (run of 7 November 2026; `output/tables/ai_beta_*.csv`, figure 5)
+
+**Merchants are the AI stocks of this sector.** Over the DeepSeek estimation window, the mean AI beta (SMH, orthogonalised) is +0.30 for merchants and between −0.35 and −0.42 for every other group. Across firms, AI beta and merchant exposure x are correlated at 0.88 (SMH) and 0.89 (NVDA).
+
+**Pooled sign-adjusted slope** (pp per 100 MW/$bn, CAR[0,1], four events, parties excluded):
+
+| Specification | SMH | NVDA |
+|---|---|---|
+| Reference: market model, no control | +0.90 (p 0.001; placebo 0/2000) | +0.90 (p 0.001; placebo 0/2000) |
+| **1. Two-factor abnormal returns (primary)** | **+0.80** (p 0.003; placebo 0/2000) | **+0.85** (p 0.002; placebo 0/2000) |
+| 2. Free event-specific AI-beta control | +0.13 (p 0.59; placebo p 0.22) | −0.14 (p 0.52; placebo p 0.79) |
+| Exploratory: AI beta × that event's AI-factor move | +0.68 (p 0.010; placebo p 0.001) | +0.70 (p 0.013; placebo p 0.003) |
+
+**DeepSeek day alone** (CAR[0,0]): x on its own is −2.8 pp per 100 MW/$bn (HC3 p 0.006). Adding AI beta takes it to −0.7 (SMH) or −0.2 (NVDA), and it is no longer significant.
+
+**Reading.**
+- **H5 holds under the pre-specified primary test.** Once each firm's predicted response to the AI-stock move is removed from its returns, the exposure slope barely changes: +0.80 to +0.85 against +0.90. It still lies above every placebo draw.
+- **The free control removes the effect, but it cannot discriminate.** With x and AI beta correlated at 0.88 and a separate AI-beta coefficient for each event, the control can reproduce whatever pattern x shows on each date. That is the over-control the caveat anticipated.
+- **The two-event evidence is what separates the stories.** The orthogonalised AI factor fell on the Crane day (SMH −1.0%) while merchants rose, and rose on the FERC day (+0.7%) while merchants fell. A general AI-sentiment channel predicts the wrong sign on both days. The exploratory specification uses this: it ties the AI channel to what AI stocks actually did that day, lets its scale be estimated freely, and β stays at +0.68 to +0.70. It was added after seeing specifications 1 and 2, so it is labelled exploratory.
+- **DeepSeek alone cannot separate the explanations.** On that day the AI shock and the electricity-demand shock are the same news, and in this sample the merchants are also the high-AI-beta firms. The electricity-specific interpretation rests on the stacked design, especially the two events where AI stocks and merchants moved in opposite directions.
+
 ## 9. Threats and responses
 
 | Threat | Response |

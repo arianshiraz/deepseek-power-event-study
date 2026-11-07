@@ -9,12 +9,12 @@ from datetime import datetime, timezone
 import pandas as pd
 import yfinance as yf
 
-from config import END, FIRMS, MARKET_TICKER, RAW, START
+from config import AI_FACTORS, END, FIRMS, MARKET_TICKER, RAW, START
 
 
 def main() -> None:
     firms = pd.read_csv(FIRMS)
-    tickers = sorted(set(firms["ticker"]) | {MARKET_TICKER})
+    tickers = sorted(set(firms["ticker"]) | {MARKET_TICKER} | set(AI_FACTORS))
 
     data = yf.download(
         tickers, start=START, end=END, auto_adjust=True, progress=False, threads=True
