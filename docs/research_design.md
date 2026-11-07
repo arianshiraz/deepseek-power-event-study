@@ -261,17 +261,30 @@ DeepSeek day alone (CAR[0,0]): x on its own is −2.8 pp per 100 MW/$bn (HC3 p 0
 | Boehmer, E., Musumeci, J., & Poulsen, A. B. (1991). Event-study methodology under conditions of event-induced variance. *Journal of Financial Economics*, 30(2), 253 to 272. | BMP test | Yes |
 | Fama, E. F., & French, K. R. (2015). A five-factor asset pricing model. *Journal of Financial Economics*, 116(1), 1 to 22. | Robustness normal-return model | Yes |
 
-**Novelty check.** Searches on 5 November 2026 found press coverage of the power-sector sell-off but no academic event study of it. SSRN and Google Scholar have not yet been searched directly. The repository is public, so this is the most urgent open check.
+**Novelty check (7 November 2026).** Google Scholar (which indexes SSRN) and web searches; SSRN and ScienceDirect pages themselves were behind bot checks, so abstracts were read from Scholar listings and secondary summaries, not full texts.
+
+No paper found estimates the cross-section of US power-sector abnormal returns on DeepSeek day against asset-level merchant and contract exposure, or tests a sign flip across good and bad AI-load news. Four papers are close enough that the note must cite them and state the difference:
+
+| Paper | What it does | Difference from this study |
+|---|---|---|
+| Caporale, G. M., Gil-Alana, L. A., & Medina Sosa, A. (2026). AI Events, Persistence, and Volatility in US Utility and AI-Exposed Stocks: The AI-Power Channel. SSRN 7502830 / CESifo WP 13001. | Four AI events (ChatGPT, GPT-4, EU AI Act vote, DeepSeek) and 14 US stocks. Fractional-integration persistence and volatility, focused on Constellation and Vistra (firms with AI-company PPAs) against utilities without such deals. Reports that AI news moves a utility's price mainly when it has a power contract with an AI firm. | Studies persistence and volatility, not abnormal returns. Exposure is a PPA dummy for two firms. Here exposure is measured from plant ownership and contracts for 45 firms, and the result runs the other way for contract share: fleets that are mostly long-term contracted (AES, Southern, NextEra) are insulated, while Constellation and Vistra are mostly merchant despite headline PPAs. |
+| Liang, H. (2026). AI-driven grid scarcity and the pricing of PJM capacity auctions in US utility stocks. *Finance Research Letters*. | Event study of the July 2024 PJM capacity auction on US utility stocks. Full abstract not read. | Overlaps with one of the four events here. The PJM event is therefore not new; the stacked sign-flip design and the exposure measure are. Read before writing the note. |
+| Naveed, M., Gurdgiev, C., & Ali, S. (2026). A New Kid on the New Block: DeepSeek Release Impact on US AI Firms, Tech Sector and the Broader Market. *Research in International Business and Finance*. | Event study of the DeepSeek release on US AI firms, technology and the broad market. | Not focused on the power sector or exposure gradients. Check whether utilities appear. |
+| Cheema-Fox, A., Czasonis, M., Kontu, P., & Serafeim, G. (2026). The AI-Energy Nexus: Data Center Demand and the Dynamics of Clean and Traditional Energy Stock Returns. HBS Working Paper 26-096. | Daily returns 2023 to 2025. Data-centre infrastructure returns, not AI stock returns, explain clean-energy returns. | Factor co-movement rather than events; supports the AI-beta control in 8d by showing that data-centre exposure, not AI sentiment, carries the signal. |
+
+Also related: Martins et al. (2026, *Finance Research Letters*) on US nuclear deregulation announcements and nuclear equities; Yang and Lin (2026, SSRN 7080180) on risk spillovers between semiconductor and energy assets; Ahn (2026, SSRN 6830598) on PPA size dispersion and returns for four firms.
+
+**Positioning.** The contribution is not "the first event study of AI news and utility stocks". It is (1) an exposure measure built from plant ownership and verified contracts, (2) a pre-specified sign-flip test across good and bad news, (3) evidence that long-term contracts insulate value, and (4) a control separating electricity exposure from AI-stock beta.
 
 ## 11. Status and remaining work
 
-Done by 7 November 2026: classification frozen with sources, continuous exposure measures, 10-K contract checks, stacked events (H4), AI-beta control (H5).
+Done by 7 November 2026: classification frozen with sources, continuous exposure measures, 10-K contract checks, stacked events (H4), AI-beta control (H5), novelty check (section 10).
 
 Remaining:
 
 | Work | Notes |
 |---|---|
-| SSRN and Google Scholar novelty check | Most urgent, since the repository is public |
+| Read Liang (2026) and Caporale et al. (2026) in full | Novelty check done 7 Nov; these two overlap most |
 | Firm news check in [−1,+1] for every event | Flag or drop confounded firms |
 | Fama and French five-factor and equal-weighted market robustness | Section 7 |
 | Confirm release times of the auction results and the FERC order | Would allow a day-0 window for those events |
